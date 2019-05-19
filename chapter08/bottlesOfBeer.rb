@@ -136,17 +136,13 @@ def englishNumber number
   numString
 end
 
-puts englishNumber(  0)
-puts englishNumber(  9)
-puts englishNumber( 10)
-puts englishNumber( 11)
-puts englishNumber( 17)
-puts englishNumber( 32)
-puts englishNumber( 88)
-puts englishNumber( 99)
-puts englishNumber(100)
-puts englishNumber(101)
-puts englishNumber(234)
-puts englishNumber(3211)
-puts englishNumber(999999)
-puts englishNumber(1000000000000)
+beer = 999
+while (beer > 1)
+  puts "#{englishNumber(beer).to_s} bottles of beer on the wall, #{englishNumber(beer).to_s} bottles of beer."
+  beer -= 1
+  puts "Take one down and pass it around, #{englishNumber(beer).to_s} bottles of beer on the wall."
+  puts ""
+end
+
+puts "1 bottle of beer on the wall, 1 bottle of beer."
+puts "Take one down and pass it around, no more bottles of beer on the wall."

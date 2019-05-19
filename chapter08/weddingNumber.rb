@@ -32,7 +32,7 @@ def englishNumber number
     numString = numString + trillions + ' trillion'
 
     if left > 0
-      numString = numString + ' '
+      numString = numString + ' and '
     end
   end
 
@@ -45,7 +45,7 @@ def englishNumber number
     numString = numString + billions + ' billion'
 
     if left > 0
-      numString = numString + ' '
+      numString = numString + ' and '
     end
   end
 
@@ -58,7 +58,7 @@ def englishNumber number
     numString = numString + millions + ' million'
 
     if left > 0
-      numString = numString + ' '
+      numString = numString + ' and '
     end
   end
 
@@ -71,7 +71,7 @@ def englishNumber number
     numString = numString + thousands + ' thousand'
 
     if left > 0
-      numString = numString + ' '
+      numString = numString + ' and '
     end
   end
 
@@ -96,7 +96,7 @@ def englishNumber number
 
     if left > 0
       # So we don't write 'two hundredfifty-one'...
-      numString = numString + ' '
+      numString = numString + ' and '
     end
   end
 
