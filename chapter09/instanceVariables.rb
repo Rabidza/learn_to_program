@@ -15,6 +15,15 @@ class Die
     @numberShowing
   end
 
+  def set num
+    if num < 1 || num > 6
+      puts "Invalid input, setting value to 1"
+      @numberShowing = 1
+    else
+      @numberShowing = num
+    end
+  end
+
 end
 
 die = Die.new
@@ -26,3 +35,15 @@ puts die.showing
 puts die.showing
 
 puts Die.new.showing
+
+puts "Set die to 5"
+die.set 5
+puts die.showing
+
+puts "Test invalid input 7"
+die.set 7
+puts die.showing
+
+puts "Test invalid input 0"
+die.set 0
+puts die.showing
